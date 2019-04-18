@@ -15,9 +15,8 @@
       <v-btn 
         flat 
         dark
-        :to="{
-          name: 'songs'
-        }">
+        to="/songs"
+        >
         Browse
       </v-btn>
     </v-toolbar-items>
@@ -29,9 +28,7 @@
         v-if="!$store.state.isUserLoggedIn"
         flat 
         dark
-        :to="{
-          name: 'login'
-        }">
+        to="/login">
         Login
       </v-btn>
       
@@ -39,9 +36,7 @@
         v-if="!$store.state.isUserLoggedIn"
         flat 
         dark
-        :to="{
-          name: 'register'
-        }">
+        to="/register">
         Sign Up
       </v-btn>
       
