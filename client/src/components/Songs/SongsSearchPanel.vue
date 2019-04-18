@@ -27,11 +27,11 @@ export default {
         }
       }
       this.$router.push(route)
-    }, 700),
+    }, 50),
     '$route.query.search': {
-      immediate: true,
-      handler (value) {
-        this.search = value
+      immediate: false,
+      async handler (value) {
+        this.search = await value
       }
     }
   }

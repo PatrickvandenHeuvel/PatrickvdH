@@ -42,7 +42,7 @@ export default new Router({
       component: EditSong
     },
     {
-      path: '*',
+      path: '/',
       redirect: 'songs'
     }
   ]
